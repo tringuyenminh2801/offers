@@ -11,5 +11,5 @@ args = parser.parse_args()
 if __name__ == "__main__":
     solver = Solver(filePath=args.filePath, 
                     checkinDate=args.checkinDate,
-                    valid_range=args.dateRange)
+                    valid_range=args.dateRange).saveResultToFile()
     print(f"Result data: {solver.getOutputDf()}")
